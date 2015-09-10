@@ -7,8 +7,9 @@ app = Flask(__name__)
 my_uuid = str(uuid.uuid1())
 BLUE = "#0099FF"
 GREEN = "#33CC33"
+GRAY = "808080"
 
-COLOR = GREEN
+COLOR = GRAY
 def getcounter():
     with open('counter', 'r+') as f:
         counter = int(f.readline())
